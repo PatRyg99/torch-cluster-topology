@@ -39,7 +39,7 @@ tensor([0, 0, 1, 1]) tensor([0, 1, 2, 3])
 ### Centerline Grouping
 
 A point clustering algorithm that groups surface points based on the underlying centerline.
-The surface points are provided as the mapping ids to the centerline, and centerline is provided
+The surface points are provided as the relative mapping ids to the centerline, and centerline is provided
 as the thresholded all pair graph distance matrix (`1` are considered to be neighbours for the grouping and `O` not).
 
 ```python
