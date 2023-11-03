@@ -23,7 +23,7 @@ A point clustering algorithm around the line segment (vector) specified by the p
 
 ```python
 import torch
-from torch_cluster_extras import vector_radius
+from torch_cluster_topology import vector_radius
 
 x = torch.Tensor([[-1, -1], [-1, 1], [1, -1], [1, 1]]).cuda()
 y = torch.Tensor([[-1, 0, 0, 0], [1, 0, 0, 0]]).cuda()
@@ -44,7 +44,7 @@ as the thresholded all pair graph distance matrix (`1` are considered to be neig
 
 ```python
 import torch
-from torch_cluster_extras import centerline_group
+from torch_cluster_topology import centerline_group
 
 x = torch.Tensor([[0], [0], [1], [1], [2], [3], [4]]).cuda()
 y = torch.Tensor([[1, 0, 1, 1, 0]]).cuda()

@@ -37,7 +37,7 @@ def vector_radius(x: torch.Tensor, y: torch.Tensor, r: float,
     .. code-block:: python
 
         import torch
-        from torch_cluster_extras import vector_radius
+        from torch_cluster_topology import vector_radius
 
         x = torch.Tensor([[-1, -1], [-1, 1], [1, -1], [1, 1]]).cuda()
         y = torch.Tensor([[-1, 0, 0, 0], [1, 0, 0, 0]]).cuda()
@@ -66,5 +66,5 @@ def vector_radius(x: torch.Tensor, y: torch.Tensor, r: float,
         ptr_x = torch.bucketize(arange, batch_x)
         ptr_y = torch.bucketize(arange, batch_y)
 
-    return torch.ops.torch_cluster_extras.vector_radius(x, y, ptr_x, ptr_y, r,
+    return torch.ops.torch_cluster_topology.vector_radius(x, y, ptr_x, ptr_y, r,
                                           max_num_neighbors, num_workers)

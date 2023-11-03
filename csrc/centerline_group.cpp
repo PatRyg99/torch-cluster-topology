@@ -25,4 +25,4 @@ torch::Tensor centerline_group(torch::Tensor x, torch::Tensor y,
 }
 
 static auto registry =
-    torch::RegisterOperators().op("torch_cluster_extras::centerline_group", &centerline_group);
+    torch::RegisterOperators().op("torch_cluster_topology::centerline_group", &centerline_group);

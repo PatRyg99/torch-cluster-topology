@@ -35,7 +35,7 @@ def centerline_group(x: torch.Tensor, y: torch.Tensor,
     .. code-block:: python
     
         import torch
-        from torch_cluster_extras import centerline_group
+        from torch_cluster_topology import centerline_group
 
         x = torch.Tensor([[0], [0], [1], [1], [2], [3], [4]]).cuda()
         y = torch.Tensor([[1, 0, 1, 1, 0]]).cuda()
@@ -64,5 +64,5 @@ def centerline_group(x: torch.Tensor, y: torch.Tensor,
         ptr_x = torch.bucketize(arange, batch_x)
         ptr_y = torch.bucketize(arange, batch_y)
 
-    return torch.ops.torch_cluster_extras.centerline_group(x, y, ptr_x, ptr_y,
+    return torch.ops.torch_cluster_topology.centerline_group(x, y, ptr_x, ptr_y,
                                           max_num_neighbors, num_workers)

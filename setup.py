@@ -74,7 +74,7 @@ def get_extensions():
 
         Extension = CppExtension if suffix == 'cpu' else CUDAExtension
         extension = Extension(
-            f'torch_cluster_extras._{name}_{suffix}',
+            f'torch_cluster_topology._{name}_{suffix}',
             sources,
             include_dirs=[extensions_dir],
             define_macros=define_macros,
@@ -95,7 +95,7 @@ test_requires = [
 ]
 
 setup(
-    name='torch_cluster_extras',
+    name='torch_cluster_topology',
     version=__version__,
     description=('PyTorch Extension Library to the torch-cluster library'),
     author='Patryk Rygiel',

@@ -2,8 +2,8 @@ from itertools import product
 
 import pytest
 import torch
-from torch_cluster_extras import vector_radius
-from torch_cluster_extras.testing import devices, grad_dtypes, tensor
+from torch_cluster_topology import vector_radius
+from torch_cluster_topology.testing import devices, grad_dtypes, tensor
 
 
 def to_set(edge_index):

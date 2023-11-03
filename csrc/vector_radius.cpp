@@ -25,4 +25,4 @@ torch::Tensor vector_radius(torch::Tensor x, torch::Tensor y,
 }
 
 static auto registry =
-    torch::RegisterOperators().op("torch_cluster_extras::vector_radius", &vector_radius);
+    torch::RegisterOperators().op("torch_cluster_topology::vector_radius", &vector_radius);
