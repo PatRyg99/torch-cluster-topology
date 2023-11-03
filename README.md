@@ -1,14 +1,14 @@
-# PyTorch Cluster Extras
+# PyTorch Cluster Topology
 
 --------------------------------------------------------------------------------
 
-This package extends `pytorch-cluster` library with custom graph clustering algorithms fo the use in [PyTorch](http://pytorch.org/).
+This package extends `pytorch-cluster` library with custom graph topology-based clustering algorithms for the use in [PyTorch](http://pytorch.org/).
 The package consists of the following clustering algorithms:
 
-* **[Vector Radius](#evg)** clustering based on vector, utilized in Rygiel *et al.*: [Eigenvector Grouping for Point Cloud Vessel Labeling](https://proceedings.mlr.press/v194/rygiel22a/rygiel22a.pdf) (GeoMedIA 2022)
-* **[Centerline Grouping](#cg)** from Rygiel *et al.*: CenterlinePointNet++: A new point cloud based architecture for coronary artery pressure drop and vFFR estimation (under review)
+* **[Vector Radius](#evg)** clustering based on vector: Rygiel *et al.* [Eigenvector Grouping for Point Cloud Vessel Labeling](https://proceedings.mlr.press/v194/rygiel22a/rygiel22a.pdf) (GeoMedIA 2022)
+* **[Centerline Grouping](#cg)**: Rygiel *et al.* [CenterlinePointNet++: A new point cloud based architecture for coronary artery pressure drop and vFFR estimation](https://link.springer.com/chapter/10.1007/978-3-031-43990-2_73) (MICCAI 2023)
 
-All included operations work on varying data types and are implemented for GPU.
+All included operations work on varying data types and are implemented for GPU - there is no version for CPU yet (opened for external contribution).
 
 ## Installation
 
