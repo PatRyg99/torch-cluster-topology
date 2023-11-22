@@ -99,7 +99,7 @@ setup(
     version=__version__,
     description=('PyTorch Extension Library to the torch-cluster library'),
     author='Patryk Rygiel',
-    author_email='patryk.rygiel@hemolens.eu',
+    author_email='p.t.rygiel@utwente.nl',
     keywords=[
         'pytorch',
         'geometric-deep-learning',
